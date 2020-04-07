@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/flex.css" />
+    <title>Написать нам</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-7">
+                    <a href="main.html">На главную</a>
+                </li>
+                <li class= "flex-3">
+                    <form action="#"method="get">
+                        <input name="search" placeholder="Поиск" type="search">
+                        <button type="submit">Искать</button>
+                </li>
+                <li class= "flex-2">
+                    <a href="#">Мой профиль</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p> Оставьте нам сообщение о возникших при использовании сервиса трудностях, и мы постараемся оперативно вам помочь </p>
+        <form enctype="multipart/form-data" name="message" action="#" method="post">
+            <input type="text" id="theme" name="theme">
+            <label for="theme">Тема сообщения<label>
+             <div>
+                <textarea minlength="10" name="letter" id="letter" required></textarea>
+            </div>
+            <input type="checkbox" name="send-email" value="send-email" checked>
+            <label for="send-email">Получать уведомление об ответе на указанный e-mail</label>
+            <div>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>
+            <a href="write-us.html">Написать нам</a>
+        </div>
+    </footer>
+</body>
+</html>

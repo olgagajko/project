@@ -1,0 +1,40 @@
+﻿body{
+	margin: 0;
+	font-family: OpenSans, Arial;
+}
+
+header {
+	background: #274b69;
+	padding: 3px;
+}
+footer {
+	background: #274b69;
+	padding: 3px;
+}
+ul {
+	list-style: none; 
+}
+a {
+	text-decoration: none;
+	color: #85a1c1;
+}
+button {
+	background: #85a1c1;
+	border: black;
+}
+img {
+	width: 100%;
+	height: auto;
+}
+.padding {
+	padding: 10px;
+}
+.main-menu {
+	font-size: 18px;
+}
+ul.main-menu li {
+	padding:3px;
+}
+ul.bottom-menu li {
+	padding:3px;
+}

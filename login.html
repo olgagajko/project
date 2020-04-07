@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/flex.css" />
+    <title>Регистрация</title>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <ul class="flex-row space-between">
+                <li class= "flex-7">
+                    <a href="main.html">На главную</a>
+                </li>
+                <li class= "flex-3">
+                    <form action="#"method="get">
+                        <input name="search" placeholder="Поиск" type="search">
+                        <button type="submit">Искать</button>
+                </li>
+                <li class= "flex-2">
+                    <a href="#">Мой профиль</a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="flex-row align-item">
+            <div class=flex-5>
+                <img src="img/register.jpg" alr="Регистрация">
+            </div>
+            <div class="flex-7 padding">
+                <p class="reg">Регистрация</p>
+                <form enctype="multipart/form-data" name="registration" action="#" method="post"> 
+                    <div>
+                        <input minlength="2" maxlength="20" id="name" type="text" name="name" required>
+                        <label for="name">Имя </label>
+                        <input minlength="2" maxlength="20" id="surname" type="text" name="surname" required>
+                        <label for="surname">Фамилия</label>
+                    </div>
+                    <div>
+                        <p>Пол</p>
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Мужской
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Женский
+                        </label>
+                    </div>
+                    <div>
+                        <input id="birthdate" type="date" name="birthdate">
+                        <label for="birthdate">Дата рождения</label>
+                    </div>
+                    <div>
+                        <input id="email" type="email" name="email" required>
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div>
+                        <input id="password" type="password" name="password" required>
+                        <label for="password">Пароль</label>
+                    </div>
+                    <input type="submit" value="Зарегистрироваться">
+                </form>
+            </div>
+        </div>
+        <div class="flex-row space-around"> 
+            <div>
+                <ul class="bottom-menu">
+                    <li>
+                        <a href="#">О проекте</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия использования</a>
+                    </li>
+                    <li>
+                        <a href="#">Условия конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="bottom-menu">
+                    <li>
+                        <a href="#">Популярные вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#">Помощь</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <a href="write-us.html">Написать нам</a>
+        </div>
+    </footer>
+</body>
+</html>
